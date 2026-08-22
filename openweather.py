@@ -3,7 +3,7 @@ import datetime
 import os
 import sys
 sys.path.append('./my_utilities')
-from my_utilities import emailfunc
+import emailfunc
 
 
 
