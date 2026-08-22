@@ -1,9 +1,7 @@
 import requests
 import datetime
 import os
-import sys
-sys.path.append('./my_utilities')
-import emailfunc
+from my_utilities import emailfunc
 
 
 
