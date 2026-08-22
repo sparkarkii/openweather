@@ -1,6 +1,6 @@
 import requests
 import datetime
-from os import environ
+import os
 import sys
 sys.path.append('./my_utilities')
 from my_utilities import emailfunc
