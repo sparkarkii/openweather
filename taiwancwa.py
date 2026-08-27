@@ -1,17 +1,13 @@
 import requests
-from dotenv import load_dotenv
 import os
-import json
-import sys
 
 
 
 
-load_dotenv()
 key = os.environ['TAIWANCWA_KEY']
 dataid = 'F-D0047-069'
 locationname = '板橋區'
-elementname = ['天氣預報綜合描述', '舒適度指數', '3小時降雨機率', '體感溫度']
+elementname = ['天氣預報綜合描述', '舒適度指數', '3小時降雨機率', '體感溫度', '溫度']
 URL = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/'
 
 
@@ -24,6 +20,3 @@ for weatherelement in res['records']['Locations'][0]['Location'][0]['WeatherElem
     for time in weatherelement['Time']:
         print(time)
         print(f'{'':=>30}')
-
-
-    
